@@ -1,19 +1,12 @@
-<?php
+<?php 
+  echo '<!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>cs290-Assignment4 Part1</title>	
+	</head>
+	<body>';
 
-  
-  /*echo '<p><h2>Multiplication Table Output</h2></P>
-  <table border="1">
-  <tr>
-  <td>key
-  <td>value';
-  */
-  
-  foreach($_GET as $key => $value){
-    echo $key . ' = ' . $value . ', ';
-  }
-  echo '<table></table>';
-  echo '<p> minimum-multiplicand is: ' . htmlspecialchars($_GET["min-multiplicand"]) . '</p>';
- 
   $minMultiplicand = ($_GET['min-multiplicand']);
   $maxMultiplicand = ($_GET['max-multiplicand']);
   $minMultiplier = ($_GET['min-multiplier']);
@@ -34,8 +27,9 @@
 	$makeTable = FALSE;
   }
   
-  //Check that values are numbers
+  
   //Check if values are zero or greater
+  //Check that values are numbers
   if ($minMultiplicand < 0) {
     echo 'Minimum multiplicand must be zero or greater. <br>';
 	$makeTable = FALSE;
@@ -67,9 +61,27 @@
     echo 'Maximum multiplier must be an integer. <br>';
 	$makeTable = FALSE;
   }
-  echo '$makeTable = ' . $makeTable;
   
+  //Make multiplication table if input pass data validation
   if ($makeTable === TRUE) {
-    echo '$makeTable = true <br>';
+
+	echo '<table border="1">';
+	$i = $minMultiplicand;
+	$j = $minMultiplier;
+	echo '<tr><td>';
+	for ($j; $j <= $maxMultiplier; $j++) {
+	    echo ' <td> ' . $j;
+	  }
+	$j = $minMultiplier;
+	for ($i; $i <= $maxMultiplicand; $i++) {
+	  echo ' <tr> <td> ' . $i;
+	  for ($j; $j <= $maxMultiplier; $j++) {
+	    echo ' <td> ' . $j * $i;
+	  }
+	  $j = $minMultiplier;
+	}
+	echo '</table>';
   }
+  
+  echo '</body></html>';
 ?>
