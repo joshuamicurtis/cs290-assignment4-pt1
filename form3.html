@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>cs290-Assignment2</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+  
+  <h2>A POST Form</h2>
+  <form action="http://web.engr.oregonstate.edu/~curtisjo/CS290/Assignment4-Part1/loopback.php" method="post">
+    <p>
+	  <label for="text_input">Text</label>
+	  <input type="text" id="text_input" name="text_input" />
+	</p>
+	<p>
+	  <label for="numerical_input">Number</label>
+	  <input type="number" min="1" max="5" id="numerical_input" name="numerical_input" />
+	</p>
+	<p>
+	  <label for="password_input">Password</label>
+	  <input type="password" id="password_input" name="password_input" />
+	</p>
+	<p>
+	  <label for="c1">
+	    <input type="radio" name="candy" id="c1" value="Snickers" checked>Snickers
+      </label>
+    </p>	
+    <p>	
+	  <label for="c2">
+	    <input type="radio" name="candy" id="c2" value="Skittles">Skittles
+	  </label>
+	</p>
+    <p> 	
+	  <label for="c3">
+	    <input type="radio" name="candy" id="c3" value="Mentos">Mentos
+      </label>
+	</p>
+	<button type="submit">Submit form</button>
+  </form>
+  
+  <h2>A GET Form</h2>
+   <form action="http://web.engr.oregonstate.edu/~curtisjo/CS290/Assignment4-Part1/loopback.php" method="get">
+    <p>
+	  <label for="text_input2">Text</label>
+	  <input type="text" id="text_input2" name="text_input" />
+	</p>
+	<p>
+	  <label for="numerical_input2">Number</label>
+	  <input type="number" min="1" max="5" id="numerical_input2" name="numerical_input" />
+	</p>
+	<p>
+	  <label for="password_input2">Password</label>
+	  <input type="password" id="password_input2" name="password_input" />
+	</p>
+	<p>
+	  <label for="c4">
+	    <input type="radio" name="candy" id="c4" value="Snickers" checked>Snickers
+      </label>
+    </p>	
+    <p>	
+	  <label for="c5">
+	    <input type="radio" name="candy" id="c5" value="Skittles">Skittles
+	  </label>
+	</p>
+    <p> 	
+	  <label for="c6">
+	    <input type="radio" name="candy" id="c6" value="Mentos">Mentos
+      </label>
+	</p>
+	<button type="submit">Submit form</button>
+  </form>
+  
+  <p>Enter integer values. Integer must be zero or greater.</p>
+    <form action="http://web.engr.oregonstate.edu/~curtisjo/CS290/Assignment4-Part1/loopback.php" method="get">
+	<p>
+	  <label>minimum-multiplicand</label>
+	  <input type="text"/>
+    </p>
+	<p>
+	  <label>maximum-multiplicand</label>
+	  <input type="text"/>
+    </p>
+	<p>
+	  <label>minimum-multiplier</label>
+	  <input type="text"/>
+    </p>
+	<p>
+	  <label for=>maximum-multiplier</label>
+	  <input type="text"/>
+    </p>
+	<button type="submit">Submit form</button>
+    </form>
+  </body>
+</html>
