@@ -1,0 +1,27 @@
+Start: Sun, 3 May 2015 20:00 -0400
+End: Sun, 3 May 2015 23:53:58 -0400
+Tasks: Finished content1.php, content2.php, and added logout.php
+
+Start: Thu, 30 Apr 2015 19:30 -0400
+End: Thu, 30 Apr 2015 20:25:02 -0400
+Tasks: Added multtable.php and log.txt
+
+Start: Fri, 1 May 2015 9:00: -0400
+End: Fri, 1 May 2015 10:57:24 -0400
+Tasks: Added error checking for multtable.php
+
+Start: Fri, 1 May 2015 11:30:24 -0400
+End: Fri, 1 May 2015 13:11:10 -0400
+Tasks: multtable.php good except stray end tag html, html validation error.
+
+Start: Fri, 1 May 2015 13:30:24 -0400
+End: Fri, 1 May 2015 14:57:15 -0400
+Tasks: Added loopback.php, not sure how to check for null values with POST reque
+
+Start: Fri, 1 May 2015 16:00:24 -0400
+End: Fri, 1 May 2015 19:36:39 -0400
+Tasks: Added login.php and content1.php, content1.php validates that a string is
+
+
+
+
